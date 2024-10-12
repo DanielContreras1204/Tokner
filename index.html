@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/century-gothic-paneuropean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Tokner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Century Gothic Paneuropean', sans-serif;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .abuelo {
+            background-color: #0F1320;
+            background-image: url(bg.png);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+        .barra {
+
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100%;
+        }
+
+        .lista ul {
+            display: flex;
+            color: white;
+            gap: 20px;
+        }
+
+        .btn {
+            color: white;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .display {
+            display: flex;
+        }
+
+        .btn2 {
+            border: 1px solid green;
+            border-radius: 70px;
+            padding: 10px 30px;
+        }
+
+        .menubarra {
+            width: 30px;
+            display: none;
+        }
+
+        .sesion-1 {
+            display: flex;
+
+
+        }
+
+        .contenido {
+            width: 30%;
+            padding-left: 77px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .celu {
+            width: 70%;
+        }
+
+        h6 {
+            color: #135d96;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: hsl(229, 13%, 35%);
+        }
+
+        .btn1 {
+            color: white;
+            background-color: hsl(147, 66%, 40%);
+            width: 95px;
+            padding: 5px 3px;
+            border-radius: 13px;
+        }
+
+        .father {
+            display: flex;
+            gap: 30px;
+            padding: 0 100px;
+            align-items: baseline;
+            height: 100vh;
+        }
+
+        .father .cartaone {
+            background-color: hsl(227, 28%, 13%);
+            border-radius: 30px;
+            width: 45%;
+            padding: 20px;
+        }
+
+
+
+        .father .cartatwo {
+            background-color: hsl(227, 28%, 13%);
+            border-radius: 30px;
+            width: 45%;
+            padding: 20px;
+            align-self: flex-end;
+        }
+
+
+        .cartaone .img-1 {
+            width: 100px;
+        }
+
+        .cartatwo .img-2 {
+            width: 100px;
+        }
+
+        .lineacolor {
+            text-decoration: underline;
+            color: hsl(147, 66%, 40%);
+        }
+
+        .azul {
+            text-decoration: underline;
+            color: hsl(211, 73%, 48%);
+        }
+
+
+        .sesion3 {
+            display: flex;
+            margin-top: 100px;
+
+        }
+
+        .sesion3 .hijoone {
+            width: 50%;
+        }
+
+        .sesion3 .hijotwo {
+            width: 50%;
+            background-color: white;
+            border-top-left-radius: 302px;
+            text-align: justify;
+            font-size: 15px;
+            /* align-self: end; */
+            /* padding: 0 0; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: flex-start; */
+            justify-content: center;
+        }
+
+        .hijotwo .ti {
+            color: hsl(226, 36%, 9%);
+            /* padding-top: 200px; */
+            /* margin: 100px; */
+            /* align-items: center; */
+        }
+
+        .hijotwo .pie {
+            color: hsl(228, 4%, 45%);
+            margin: 0 100px;
+        }
+
+        .hijotwo .prraf {
+            color: hsl(227, 4%, 52%);
+            padding-inline: 100px;
+        }
+
+        .Q1 {
+            background-color: hsl(147, 66%, 40%);
+            width: fit-content;
+            padding: 20px;
+            border-radius: 30px 30px 30px 10px;
+        }
+
+        .puntitov {
+            background-color: hsl(147, 66%, 40%);
+            height: 5px;
+            width: 5px;
+            border-radius: 200px;
+        }
+
+        .sesion4 .figura {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sesion4 .padrepunto {
+            align-self: self-end;
+            color: white;
+        }
+
+        .verd {
+            color: hsl(147, 66%, 40%);
+        }
+
+        .sesion4 {
+            padding: 60px 80px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .Q2 {
+            background-color: hsl(211, 73%, 48%);
+            width: fit-content;
+            padding: 20px;
+            border-radius: 30px 30px 30px 10px;
+        }
+
+        .puntitoA {
+            background-color: hsl(211, 73%, 48%);
+            height: 5px;
+            width: 5px;
+            border-radius: 200px;
+        }
+
+        .sesion4 .figura2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sesion4 .padrepuntoA {
+            align-self: self-end;
+            color: white;
+        }
+
+        .azu {
+            color: hsl(211, 73%, 48%);
+        }
+
+
+        .Q3 {
+            background-color: hsl(49, 100%, 50%);
+            width: fit-content;
+            padding: 20px;
+            border-radius: 30px 30px 30px 10px;
+        }
+
+        .puntitoY {
+            background-color: hsl(49, 100%, 50%);
+            height: 5px;
+            width: 5px;
+            border-radius: 200px;
+        }
+
+        .sesion4 .figura3 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sesion4 .padrepuntoY {
+            align-self: self-end;
+            color: white;
+        }
+
+        .yell {
+            color: hsl(49, 100%, 50%);
+        }
+
+        .Q4 {
+            background-color: red;
+            width: fit-content;
+            padding: 20px;
+            border-radius: 30px 30px 30px 10px;
+        }
+
+        .puntitoR {
+            background-color: red;
+            height: 5px;
+            width: 5px;
+            border-radius: 200px;
+        }
+
+        .sesion4 .figura4 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sesion4 .padrepuntoR {
+            align-self: self-end;
+            color: white;
+        }
+
+        .Red {
+            color: red;
+        }
+
+        .lado {
+            display: flex;
+            gap: 12px;
+        }
+
+        .lado .dobleu {
+            width: 50px;
+            height: fit-content;
+        }
+
+        .sesion5 {
+            padding: 20px 80px;
+            display: flex;
+            gap: 44px;
+        }
+
+        .lado .tok {
+            margin-top: -5px;
+            color: white;
+        }
+
+        .btnmore .bott {
+            border: 1px solid green;
+            width: fit-content;
+            padding: 10px 10px;
+            border-radius: 20px;
+            color: white;
+            margin-top: 25px;
+        }
+
+        .imag {
+            width: 50%;
+        }
+
+        .hijotext {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .intro {
+            margin: -5px;
+            font-size: 13px;
+        }
+
+        .sesion6 {
+            background-image: url(fondo.png);
+            background-size: contain;
+            height: 966px;
+            padding-top: 216px;
+            margin-top: -193px;
+            background-repeat: no-repeat;
+            /* width: 100%; */
+        }
+
+        .sesion6 h1 {
+            text-align: center;
+            color: white;
+            /* margin-top: 8px; */
+            position: relative;
+            top: 59px;
+        }
+
+        .sesion6 .car {
+            background-color: white;
+            width: fit-content;
+            padding: 60px 30px;
+            border-radius: 30px;
+            text-align: center;
+            height: fit-content;
+
+        }
+
+        .sesion6 .carta2 {
+            background-color: white;
+            width: fit-content;
+            padding: 60px 30px;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .sesion6 .carta3 {
+            background-color: white;
+            width: fit-content;
+            padding: 60px 30px;
+            border-radius: 30px;
+            text-align: center;
+            height: fit-content;
+        }
+
+        .disflex {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 152px;
+            align-content: center;
+
+        }
+
+        .armaSecreta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .one1 {
+            background-color: hsl(147, 66%, 40%);
+            width: fit-content;
+            padding: 10px 10px;
+            border-radius: 20px 20px 20px 4px;
+            margin-left: 105px;
+            /* align-items: self-end; */
+            /* margin-right: -74px; */
+        }
+
+        .two2 {
+            background-color: hsl(211, 73%, 48%);
+            width: fit-content;
+            padding: 10px 10px;
+            border-radius: 20px 20px 20px 4px;
+
+
+        }
+
+        .three3 {
+            background-color: hsl(49, 100%, 50%);
+            width: fit-content;
+            padding: 10px 10px;
+            border-radius: 20px 20px 20px 4px;
+            margin-left: 108px;
+        }
+
+        .sesion7 {
+            padding: 10px 60px;
+            position: relative;
+        }
+
+        .carteles {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sesion7 .cartel1 {
+            background-color: hsl(227, 28%, 13%);
+            width: fit-content;
+            padding: 50px 30px;
+            border-radius: 30px;
+            height: fit-content;
+        }
+
+        .sesion7 .cartel2 {
+            background-color: hsl(227, 28%, 13%);
+            width: fit-content;
+            padding: 50px 30px;
+            border-radius: 30px;
+            margin-top: 30px;
+
+        }
+
+        .sesion7 .cartel3 {
+            background-color: hsl(227, 28%, 13%);
+            width: fit-content;
+            padding: 50px 30px;
+            border-radius: 30px;
+            height: fit-content;
+        }
+
+        .flechas {
+            position: absolute;
+            background-color: hsl(226, 36%, 9%);
+            color: green;
+            padding: 10px 10px;
+            border-radius: 30px;
+            top: 185px;
+            left: 491px;
+        }
+
+        .flecha2 {
+            position: absolute;
+            background-color: hsl(226, 36%, 9%);
+            color: orange;
+            padding: 10px 10px;
+            border-radius: 30px;
+            top: 191px;
+            left: 896px;
+        }
+
+        .sesion7 h1 {
+            text-align: center;
+        }
+
+        .carteles p {
+            color: white;
+        }
+
+        .etiquetas {
+            display: flex;
+            justify-content: center;
+            gap: 83px;
+            color: white;
+            padding-top: 90px
+        }
+        .decoracion{
+            text-decoration-line: underline;
+        }
+        .lgo{
+            width: 300px;
+        }
+
+        .twiter-1{
+            width: 30px;
+        }
+
+        .sesion8{
+            display: flex;
+            gap: 150px;
+            margin-top: 80px;
+            align-items: center;
+            padding: 20px 116px;
+        }
+        .sesion8 svg{
+            width: 40px;
+        }
+        
+        
+        
+        
+        
+    </style>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <div class="abuelo">
+        <div class="barra">
+            <div class="display">
+                <div>
+                    <img class="logo" src="logo (2).png" alt="">
+                </div>
+                <div class="lista">
+                    <ul>
+                        <li>Our teams</li>
+                        <li>Tokens</li>
+                        <li>Connect wallet</li>
+                        <li>Ligthpaper</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn">
+                <div>Sing in</div>
+                <div class="btn2">Sing up</div>
+            </div>
+            <div class="menubarra">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="sesion-1">
+            <div class="contenido">
+                <h6>At Tokners we are</h6>
+                <h1>Reimagining social media through the power of the blockchain.</h1>
+                <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch
+                    their own digital currency by simply creating a profile with media content posted as Non fungible
+                    Tokens that can be owned and traded on the Tknrs network</p>
+                <div class="btn1">
+                    Learn More
+                </div>
+            </div>
+            <div class="celu">
+                <img src="img.png" alt="">
+            </div>
+        </div>
+
+        <div class="father">
+            <div class="cartaone">
+                <img class="img-1" src="logoverde.png" alt="">
+                <h1>For <span class="lineacolor">Creators</span></h1>
+                <p>Creators can gain independence through a decentralised digital currency system that is
+                    dependent on growing and engaging with the community and also their star power. They own
+                    10-15% of the total value of the tokens minted.</p>
+                <a href="">Learn More</a>
+            </div>
+
+            <div class="cartatwo">
+                <img class="img-2" src="logoazul.png" alt="">
+                <h1>For <span class="azul">Holders</span></h1>
+                <p>Holding social tokens allows the individual to gain access to benefits including unreleased
+                    content, private communities, direct access to celebrity, early- access to tickets and more as well
+                    as the ability to trade with other communities in order to gain access to more creator content with
+                    early token buyers being the biggest winners as the value of the token increases with more buyers.
+                </p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+
+        <div class="sesion3">
+            <div class="hijoone">
+                <img src="tobogan.png" alt="">
+            </div>
+            <div class="hijotwo">
+                <h1 class="ti">What makes us different?</h1>
+                <h6 class="pie">We would only launch tokens with the express permission of the creators. </h6>
+                <p class="prraf">There are several thousand celebrities and creators on twitter, tiktok, Instagram and
+                    YouTube with followings in the millions who we would be actively engaging before we go viral. </p>
+
+                <p class="prraf"> We would get them on our
+                    platform and they would see the opportunity to create a fan driven digital economy where their
+                    digital content can be traded as NFTs and their most loyal fans can have the monetary value of their
+                    creator's currency increase significantly as they promote their digital currency across their
+                    channels while our native token holders benefit from the Weentar popularity.</p>
+            </div>
+        </div>
+
+        <div class="sesion4">
+            <div class="cart">
+                <div class="figura">
+                    <div class="Q1">
+                        Q1
+                    </div>
+                    <div class="padrepunto">
+                        <div class="puntitov"></div>
+                        2021
+                    </div>
+                </div>
+                <p><span class="verd">01</span> Team set-up</p>
+                <p><span class="verd">02</span> Launch of informational website</p>
+            </div>
+
+            <div class="cart2">
+                <div class="figura2">
+                    <div class="Q2">
+                        Q2
+                    </div>
+                    <div class="padrepuntoA">
+                        <div class="puntitoA"></div>
+                        2021
+                    </div>
+                </div>
+                <p><span class="azu">01</span> Presale and exchange listings</p>
+                <p><span class="azu">02</span> Blockchain development and launch</p>
+                <p><span class="azu">02</span> Launch of our MVP</p>
+                <p><span class="azu">02</span> Influencer agency partnerships</p>
+                <p><span class="azu">02</span> Marketing and promotion </p>
+            </div>
+            <div class="cart3">
+                <div class="figura3">
+                    <div class="Q3">
+                        Q3
+                    </div>
+                    <div class="padrepuntoY">
+                        <div class="puntitoY"></div>
+                        2021
+                    </div>
+                </div>
+                <p><span class="yell">01</span> Celebrity, Creator and Influencer partnerships</p>
+                <p><span class="yell">02</span> Expansion of creator communities on our platform</p>
+                <p><span class="yell">02</span> More Marketing and promotion</p>
+            </div>
+
+            <div class="cart4">
+                <div class="figura4">
+                    <div class="Q4">
+                        Q3
+                    </div>
+                    <div class="padrepuntoR">
+                        <div class="puntitoR"></div>
+                        2021
+                    </div>
+                </div>
+                <p><span class="Red">01</span> Celebrity, Creator and Influencer partnerships</p>
+                <p><span class="Red">02</span> Expansion of creator communities on our platform</p>
+                <p><span class="Red">02</span> More Marketing and promotion</p>
+            </div>
+        </div>
+
+        <div class="sesion5">
+            <div class="hijotext">
+                <div class="lado">
+                    <img class="dobleu" src="Group 3.png" alt="">
+                    <h1 class="tok">Tokner is coming</h1>
+                </div>
+                <p class="intro">Cryptocurrency adoption is at less than 1% of the global world population with some
+                    countries and entities actively fighting against its mass adoption and the smartest developers and
+                    nerds holding the fort. <br>
+                    <br>
+
+                    Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to fix one
+                    problem or the other with some quite simply FOMOing the moment. Our goal is to bring mass adoption
+                    to the cryptocurrency space by dumbing it down. How far down? So down that even a celebrity can
+                    explain it in simple words to their followers and have them download an app, buy into the social
+                    currency of their favourite person and watch their
+                    investment as is with other crypto currency project. <br>
+                    <br>
+                    We are trying to do to this space what investment apps did for the "nonexistent retail investors".
+                    We are gamefying digital currency, bringing in popular faces instead of hard to understand projects
+                    to make it the norm and inadvertently being the "gateway drug" for a lot of people to finally give
+                    this space a real look. <br>
+                    <br>
+                    A new digital economy is coming. People would be just as powerful as countries and creators would be
+                    paid beyond the peanuts that conventional social media platforms can offer. <br>
+                    <br>
+                    There would be new markets and advertisers with little to offer would not find home there. Like
+                    Kanye said, "Personalities would become the new currency, and services would be built on top of
+                    them". Well, Kanye didn't exactly say that, but it sounds like something we hope he would say. <br>
+                    br
+                    Currency is digital, it has been that way for a while now, but this time there would be no dead
+                    presidents on the money, there would people like you on the money, and you would own it because it
+                    would make the most sense in the world.
+                </p>
+
+                <div class="btnmore">
+                    <p class="bott">Read More</p>
+                </div>
+            </div>
+
+            <div class="imag">
+                <img src="Group 73.png" alt="">
+            </div>
+        </div>
+
+        <div class="sesion6">
+            <h1>Presale Details</h1>
+            <div class="disflex">
+
+                <div class="car armaSecreta">
+                    <div class="one1 armaSecreta">
+                        01
+                    </div>
+                    <br>
+                    <h4>Phase One</h4>
+                    <h6>0/04/2021 - 16/04/2021</h6>
+                    <br>
+                    <h4>1 BNB = 100000 WNTR</h4>
+                    <h6>Soft cap: 5000 BNB</h6>
+                    <h6>Hard cap: 10000 BNB</h6>
+                </div>
+
+                <div class="carta2">
+                    <div class="two2 armaSecreta">
+                        02
+                    </div>
+                    <br>
+                    <h4>Phase Two</h4>
+                    <h6>0/04/2021 - 16/04/2021</h6>
+                    <br>
+                    <h4>1 BNB = 100000 WNTR</h4>
+                    <h6>Soft cap: 5000 BNB</h6>
+                    <h6>Hard cap: 10000 BNB</h6>
+                </div>
+
+                <div class="carta3">
+                    <div class="three3 armaSecreta">
+                        03
+                    </div>
+                    <br>
+                    <h4>Phase Three</h4>
+                    <h6>0/04/2021 - 16/04/2021</h6>
+                    <br>
+                    <h4>1 BNB = 100000 WNTR</h4>
+                    <h6>Soft cap: 5000 BNB</h6>
+                    <h6>Hard cap: 10000 BNB</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="sesion7">
+            <h1>How to buy</h1>
+            <br>
+            <div class="carteles">
+                <div class="cartel1">
+                    <h6>01</h6>
+                    <p>First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.</p>
+                </div>
+                <div class="cartel2">
+                    <h6>02</h6>
+                    <p>Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet</p>
+                </div>
+                <div class="cartel3">
+                    <h6>03</h6>
+                    <p>Then after you will received your $WNTR to your address within 24hours. </p>
+                </div>
+            </div>
+            <div class="flechas">
+                >
+            </div>
+
+            <div class="flecha2">
+                >
+            </div>
+        </div>
+
+        <div class="etiquetas">
+            <div><span class="decoracion">Our team</span>/</div>
+            <div><span class="decoracion">Tokens</span>/</div>
+            <div><span class="decoracion">Connect wallet</span>/</div>
+            <div><span class="decoracion">Lightpaper</span>/</div>
+        </div>
+
+        <div class="sesion8">
+            <div class="lgo">
+                <img src="logo (2).png" alt="">
+            </div>
+            <div class="app">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f2f2f2" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg>
+                
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M22.7 33.4c13.5-4.1 28.1 1.1 35.9 12.9L224 294.3 389.4 46.3c7.8-11.7 22.4-17 35.9-12.9S448 49.9 448 64l0 384c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-278.3L250.6 369.8c-5.9 8.9-15.9 14.2-26.6 14.2s-20.7-5.3-26.6-14.2L64 169.7 64 448c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 49.9 9.2 37.5 22.7 33.4z"/></svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+            </div>
+
+            <div class="final">
+                <h6>© 2021 Tokners. All rights reserved.</h6>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

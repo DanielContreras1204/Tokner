@@ -1,0 +1,111 @@
+@media(max-width:600px) {
+    .lista {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .menubarra {
+        display: block;
+    }
+
+    .sesion-1 {
+        flex-direction: column;
+    }
+
+    .contenido {
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .celu {
+        width: 100%;
+    }
+
+    .father {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        padding: 0;
+        height: 125vh;
+    }
+
+    .father .cartaone {
+        width: 90%;
+
+    }
+
+    .father .cartatwo {
+        align-self: initial;
+        width: 90%;
+    }
+
+    .sesion3 {
+        flex-direction: column;
+    }
+
+    .sesion3 .hijoone {
+        width: 100%;
+        transform: scaleX(-1);
+    }
+
+    .sesion3 .hijotwo {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 300px;
+        /* padding: 112px; */
+        /* padding: 16px; */
+        /* margin-bottom: 83px; */
+        height: -48PX;
+    }
+
+    .hijotwo .ti {
+        /* margin: 100px; */
+        padding-top: 100px;
+        justify-content: center;
+    }
+
+    .sesion4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sesion5 {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin-top: 151px; */
+    }
+
+    .imag {
+        width: 100%;
+    }
+
+    .hijotext {
+        width: 100%;
+    }
+    .sesion6{
+        background-image: url(Mask\ Group.png);
+        margin-top: 0 ;
+        padding-top: 0;
+    }
+
+    .car{
+        display: none;
+    }
+
+    .carta3{
+        display: none;
+    }
+
+    .carteles{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .etiquetas{
+        display: none;
+    }
+}
